@@ -20,7 +20,7 @@ def enviar_email(user, passwd):
             logging.warning('Enviando email para: {}'.format(send))
         
             msg = email.message.Message()
-            msg['Subject'] = "Disco do FileSender"
+            msg['Subject'] = "Definir o subject do email"
             msg['From'] = '{}'.format(user)
             msg['To'] = '{}'.format(send)
             password = '{}'.format(passwd) 
